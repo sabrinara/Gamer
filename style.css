@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* nav bar style  */
 header {
     background-color: #faf8f8;
@@ -32,11 +38,7 @@ header {
 .nav-title {
     display: flex;
     align-items: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
+    width: 35%;
 }
 
 ul {
@@ -44,7 +46,12 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+.left-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .left-menu li {
     display: inline;
     margin-right: 10px;
@@ -58,7 +65,7 @@ ul {
 
 .menu-item {
     background-color: rgb(233, 233, 222);
-    padding: 5px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -87,19 +94,19 @@ section {
 
 }
 
-h2,
-p,
-h1 {
-    margin-bottom: 5px;
+h2, p, h1 {
+    margin-bottom: 3px;
 }
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 0;
-    color: rgb(218, 44, 203);
     font-size: 45px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
@@ -244,11 +251,14 @@ img {
     gap: 30px;
 }
 
-.right-div {
+.right-div2 {
     margin-left: 50px;
     text-align: right;
 }
-
+.right-div2 span
+{
+     color: #000000;
+}
 .left-div2 {
     margin-right: 50px;
     position: relative;
