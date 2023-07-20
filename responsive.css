@@ -1,0 +1,93 @@
+@media screen and (max-width:688px) {
+    /* navbar design starts here */
+    .navbar{
+        flex-direction: column;
+    }
+    .navigation-container{
+        flex-direction: column;
+        /* width: 50%; */
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .navigation-container a{
+        margin-top: 10px;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .left-main {
+        text-align: center;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+    .button {
+        flex-direction: row;
+        text-align: center ;
+        margin: 0 40px;
+    }
+    .optional {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choose-game {
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .icon-overlay
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-div2 {
+        
+        text-align: center;
+    }
+    .right-div {
+        text-align: center;
+
+    }
+
+    .forth {
+        margin-top: 5px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .fifth {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .button-section {
+        padding: 10px;
+    }
+
+    .row {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-a{
+        flex-direction: column;
+        justify-content: center;
+        /* margin: 30px;
+        gap: 25px; */
+        
+    }
+    .icon-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}

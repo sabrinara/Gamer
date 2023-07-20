@@ -7,28 +7,28 @@
     <title>Gamer</title>
     <link rel="icon" href="./images/Frame.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- nav bar section -->
     <header>
-        <div class="logo">
-            <img src="./images/Frame.png" alt=" ">
-            <h1>G<span>amer</span></h1>
-        </div>
-        <div class="nav-title">
-            <ul class="left-menu">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Developers</a></li>
-            </ul>
-
-            <div class="menu-item">
-                <b>Follow Us On</b>
-                <img style="width: 25px;" src="./images/youtube_icon.png" alt="">
-                <img style="width: 25px; margin-left: 2px;" src="./images/inistragram_icon.jpg" alt="">
+        <nav>
+            <div class="navbar">
+                <div class="logo-container">
+                    <img class="nav-image" src="./images/Frame.png" alt=" "><span>G<span class="amer">amer</span></span>
+                </div>
+                <div class="navigation-container">
+                    <a href="">About Us</a>
+                    <a href="">Developer</a>
+                    <a class="login" href="">Follow Us On <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
-
-        </div>
+        </nav>
     </header>
     <!-- main banner section  -->
     <main>
@@ -36,11 +36,12 @@
             <div class="left-main">
                 <h2>Play Like The</h2>
                 <h1>G.O.A.T.</h1>
-                <ul type="none">
-                    <li><img src="./images/play_icon.jpg" alt=""> 1-Click instant play</li>
-                    <li><img src="./images/download_icon.png" alt=""> No Download</li>
-                    <li><img src="./images/people_icon.jpg" alt=""> 1000s of supported online games</li>
-                </ul>
+                <div class="icon-banner">
+                    <p><i class="fa-solid fa-play"></i></i>1-Click instant play</p>
+                    <p><i class="fa-solid fa-download"></i>No Download</p>
+                    <p><i class="fa-solid fa-user-group"></i>1000s of supported online game</p>
+                </div>
+
                 <div class="button">
                     <button class="button1">Sign In</button>
                     <button class="button2">Go Rogue</button>
@@ -63,9 +64,11 @@
                         mobile games. We reach over 400 million players each <br>
                         month and our audience keeps growing. <br></p>
                     <div class="button3-div"><button class="button3">KNOW MORE</button></div>
-                    <div><h3><br><br>Our Purpose...</h3>
-                    <h2>"unleash the gamer in everyone"</h2></div>
-                    
+                    <div>
+                        <h3><br><br>Our Purpose...</h3>
+                        <h2>"unleash the gamer in everyone"</h2>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -75,23 +78,52 @@
                 <h1><span>Online Games </span>Funny Videos</h1>
                 <p>A Collection of Hilarious Videos to Brighten Your Day</p>
                 <div class="choose-game">
-                    <div>
-                        <img src="./images/Rectangle 7.png" alt="">
-                        <p>Busted gaming on school laptop,
+                    <div class="choose-game-box">
+                        <div class="choose-game-overlay">
+                            <img src="./images/Rectangle 7.png" alt="" class="fading-image">
+
+                            <div class="icon-overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="watch-now">Watch Now</div>
+                            </div>
+                        </div>
+                        <p>Busted gaming on school laptop, <br>
                             but you are still lit.</p>
                     </div>
-                    <div>
-                        <img src="./images/Rectangle 4.png" alt="">
-                        <p>No Download. No Installs. Play
+                    <div class="choose-game-box">
+                        <div class="choose-game-overlay">
+                            <img src="./images/Rectangle 4.png" alt="" class="fading-image">
+
+                            <div class="icon-overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="watch-now">Watch Now</div>
+                            </div>
+                        </div>
+                        <p>No Download. No Installs. <br>Play
                             games Instantly on Gamer.</p>
                     </div>
-                    <div>
-                        <img src="./images/Rectangle 5.png" alt="">
+                    <div class="choose-game-box">
+                        <div class="choose-game-overlay">
+                            <img src="./images/Rectangle 5.png" alt="" class="fading-image">
+
+                            <div class="icon-overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="watch-now">Watch Now</div>
+                            </div>
+                        </div>
                         <p>Did you score? #unblockedgames
-                            #school</p>
+                            <br> #school
+                        </p>
                     </div>
-                    <div>
-                        <img src="./images/Rectangle 6.png" alt="">
+                    <div class="choose-game-box">
+                        <div class="choose-game-overlay">
+                            <img src="./images/Rectangle 6.png" alt="" class="fading-image">
+
+                            <div class="icon-overlay">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <div class="watch-now">Watch Now</div>
+                            </div>
+                        </div>
                         <p>Breaking game records
                             like OG</p>
                     </div>
@@ -99,33 +131,37 @@
             </div>
         </section>
         <!-- forth section  -->
-        <section class="forth">
-            <div class="left-div">
-                <h1>Play Instantly,</h1>
-                <h2>No Downloads,<br>
-                    No Installs. </h2>
-                <p>Play games online for free without <br>
-                    downloading. Just click the Play button <br>
-                    and play instantly in your browser.</p>
-            </div>
-            <div class="right-div">
-                <img class="Rectangle-55" src="./images/Rectangle 55.png" alt="">
-                <img class="Rectangle-66" src="./images/Rectangle 66.png" alt="">
+        <section>
+            <div class="forth">
+                <div class="left-div">
+                    <h1>Play Instantly,</h1>
+                    <h2>No Downloads,<br>
+                        No Installs. </h2>
+                    <p>Play games online for free without <br>
+                        downloading. Just click the Play button <br>
+                        and play instantly in your browser.</p>
+                </div>
+                <div class="right-div">
+                    <img class="Rectangle-55" src="./images/Rectangle 55.png" alt="">
+                    <img class="Rectangle-66" src="./images/Rectangle 66.png" alt="">
+                </div>
             </div>
         </section>
         <!-- fifth section  -->
-        <section class="fifth">
-            <div class="left-div2">
-                <img class="Rectangle-67" src="./images/Rectangle 67.png" alt="">
-                <img class="Rectangle-78" src="./images/Rectangle 78.png" alt="">
-            </div>
-            <div class="right-div2">
-                <h1>Play Games <br>
-                    Online <span>Anywhere, <br>
-                        Anytime!</span> </h1>
-                <p>Play games online for free without <br>
-                    downloading. Just click the Play button <br>
-                    and play instantly in your browser.</p>
+        <section>
+            <div class="fifth">
+                <div class="left-div2">
+                    <img class="Rectangle-67" src="./images/Rectangle 67.png" alt="">
+                    <img class="Rectangle-78" src="./images/Rectangle 78.png" alt="">
+                </div>
+                <div class="right-div2">
+                    <h1>Play Games <br>
+                        Online <span>Anywhere, <br>
+                            Anytime!</span> </h1>
+                    <p>Play games online for free without <br>
+                        downloading. Just click the Play button <br>
+                        and play instantly in your browser.</p>
+                </div>
             </div>
         </section>
 
@@ -176,19 +212,34 @@
 <footer>
     <div class="footer">
         <div class="footer-logo">
-            <img width="50px" src="./images/Frame.png" alt=" ">
+            <img width="30px" src="./images/Frame.png" alt=" ">
             <h4>G<span>amer</span></h4>
         </div>
+        <div>
+            <div class="footer-a">
+                <a href="">Our Story</a>
+                <a href="">Gamer</a>
+                <a href="">Web Gamer</a>
+                <a href="">Careers</a>
+                <a href="">Support</a>
+                <a href="">My Account</a>
+            </div>
+            <div class="icon-section">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-apple"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
 
-        <p>Our Story &emsp; Gamer &emsp; Web Gamer&emsp; Careers&emsp; Support&emsp; My Account</p>
-        <p><small>Terms and Conditions&emsp; Privacy Policy&emsp; Cookie Policy Privacy &emsp;Settings&emsp;</small></p>
-        <div class="icon-section">
-            <img style="width: 30px;height: 20px;" src="./images/youtube_icon.png" alt="">
-            <img style="width: 30px;height: 20px;" src="./images/inistragram_icon.jpg" alt="">
-            <img style="width: 30px;height: 20px;" src="./images/facebook_icon.png" alt="">
-            <img style="width: 30px;height: 20px;" src="./images/apple_icon.png" alt="">
+            <small>Terms and Conditions&emsp; Privacy Policy&emsp; Cookie Policy Privacy
+                &emsp;Settings&emsp;</small> <br> <br>
+
+            <small>Play Games @ Gamer @ 2000-2023 Gamer Bangladesh. </small>
+
         </div>
-        <p><small>Play Games @ Gamer @ 2000-2023 Gamer Bangladesh. </small></p>
+
+
     </div>
 </footer>
 
